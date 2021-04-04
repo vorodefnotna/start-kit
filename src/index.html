@@ -1,7 +1,265 @@
-@@include('./includes/top.html', {"title": "tag title content"})
-@@include('./includes/header.html')
+<!-- @@include('./includes/top.html', {"title": "tag title content"})
+@@include('./includes/header.html') -->
 
-111
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+        <a href="/" class="logo">
+            <img src="img/logo.svg" alt="Hells Bells" class="logo__img">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__burger">
+                <span class="main-nav__burger-text">Toogle menu</span>
+            </button>
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">1</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">2</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">3</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="" class="main-nav__link">4</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="tel:+00000000" class="page-header__phone">+7(999)001-02-03</a>
+         <ul class="social-links">
+            <li class="social-links__item">
+                <a href="" class="social-links__link">vkontakte</a>
+            </li>
+            <li class="social-links__item">
+                <a href="" class="social-links__link">facebook</a>
+            </li>
+            <li class="social-links__item">
+                <a href="" class="social-links__link">instagram</a>
+            </li>
+        </ul>    
+    </div>
+  </header>
+    <main class="page-main">
+        <!-- <section class="promo">
+            <img src="" alt="banner">
+            <div class="container">
+                <p>Текст</p>
+            </div>   
+        </section> -->
+        <section  class="yourstyle">
+            <h2 class="yourstyle__title">Выбери свой стиль</h2>
+            <div> 
+                <!-- какой класс -->
+                <ul class="yuorstyle__list">
+                    <li class="yuorstyle__item">
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="графика">
+                            <h3>Графика</h3>
+                        </a>
+                    </li>
+                    <li class="yuorstyle__item">
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="ориентал">
+                            <h3>Ориентал (Япония)</h3>
+                        </a>
+                    </li>
+                    <li class="yuorstyle__item"> 
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="биомеханика">
+                            <h3>Биомеханика</h3>
+                        </a> 
+                    </li>
+                    <li class="yuorstyle__item">
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="дотворк">
+                            <h3>Дотворк</h3>
+                        </a>
+                    </li>
+                    <li class="yuorstyle__item">
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="blackwork">
+                            <h3>Blackwork</h3>
+                        </a>
+                    </li>
+                    <li class="yuorstyle__item">
+                        <a class="yourstyle__link" href="#">
+                            <img src="#" alt="минимализм">
+                            <h3>Минимализм</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title">Искусство наших тату-мастеров</h2>
+            <div class="gallery__list">
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка1">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка2">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка3">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка4">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка5">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка6">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка7">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка8">
+                    </a>
+                </div>
+                <div class="gallery__item">
+                    <a class="gallery__link" href="#">
+                        <img src="#" alt="картинка9">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <p>Перейти в портфолио</p>
+                    <!-- <img src="#" alt="стрелка"> -->
+                    параграф вместо дива, внутри не параграф
+                </a>
+            </div>
+        </section>
+        <section class="youridea">
+            <h2 class="visually-hidden"></h2>
+            можно див вместо секшн
+            <!-- <img class="youridea__img" src="" alt="двойная стрелка влево"></img> -->
+            <div class="youridea__text">
+            <p>Несите нам свои идеи и мы воплотим в татуировке то, что вы хотите сказать!</p>
+            </div>    
+        </section> 
+        <section class="info">
+            <h2 class="info__title">Четыре столпа "Hells Bells Tattoo"</h2>
+            <div class="info__list">
+                <div class="info__item">
+                    <article>
+                        <h3>Индивидуальны подход</h3>
+                    </article>
+                    <!-- просто див -->
+                    <article class="info__article">
+                        <h3 class="visually-hidden"></h3>
+                        <p>Мы не набиваем эскизы, скачанные с интернета, потому что ваша 
+                        индивидуальность для нас стоит на первом месте!
+                        Татуировка — это ваш внутренний мир. А тату-матер является вашим 
+                        личным помощником в самовыражении. Ни у кого такой татуировки, как 
+                        у вас не может быть!
+                        Именно поэтому, каждый раз, мы разрабатываем новые уникальные 
+                        эскизы.
+                        Не стесняйтесь, несите нам свои идеи и мы воплотим в татуировке то, 
+                        что вы хотите сказать!</p>
+                        <!-- оформить через список с див и р -->
+                    </article>
+                </div>
+                <div class="info__item">
+                    <article>
+                        <h3>Адекватные цены</h3>
+                    </article>
+                    <article class="info__article">
+                        <h3 class="visually-hidden"></h3>
+                        <p>В нашей студии стоимость* работ оценивается по ее размерам и сложности.
+                        Чёрный квадрат 15×15 см или высокодетализированная татуировка, 
+                        вписанная в эти же размеры, имеют разную цену. Также сложность 
+                        выполнения татуировки зависит от места на теле.
+                        Консультация у любого мастера — бесплатно. <a href="#">Запишись сейчас</a> 
+                        *минимальная цена татуировки от 4000 ₽</p>
+                    </article>
+                </div>
+                <div class="info__item"> 
+                    <article>
+                        <h3>Студия в центре города</h3>
+                    </article>
+                    <article class="info__article">
+                        <h3 class="visually-hidden"></h3>
+                        <p>Мы находимся в историческом центре Санкт-Петербурга, в 5 минутах 
+                        ходьбы от метро Достоевская на наб. реки Фонтанки, д. 54
+                        Наши двери открыты для вас КРУГЛОСУТОЧНО</p>
+                    </article>
+                </div>
+                <div class="info__item">
+                    <article>
+                        <h3>Безопасность превыше всего</h3>
+                    </article>
+                    <article class="info__article">
+                        <h3 class="visually-hidden"></h3>
+                        <p>В своей работе мы используем только качественные гипоаллергенные 
+                        материалы, одноразовые расходники и фирменное оборудование: от 
+                        пигментов до модульных игл.
+                        Наша студия, одна из немногих в городе, имеет <a href="#">медицинскую лицензию</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>  
+        <section class="consult">
+             <h2>Записаться на консультацию</h2>
+             <p class="consult__descr">Оставьте свой номер телефона и наш администратор свяжется с вами в течение 15 минут</p>
+            <form class="consult__form" action="">
+                 <label class="field-text consult__form-item">
+                     <input class="field-text__input" type="text" name="name" placeholder="имя">
+                 </label>
+                 <label class="field-text consult__form-item">
+                     <input class="field-text__input" type="number" name="phone" placeholder="+7 ( ___ ) ___ - __ - __ ">
+                 </label>
+                 <p class="consult__form-descr">Нажимая кнопку «Перезвоните мне», я даю согласие на обработку персональных данных
+                 и соглашаюсь с политикой конфиденциальности</p>
+                  <button class="btn" type="submit">Перезвоните мне!</button>
+            </form>
+         </section>
+    </main>
+    <footer class="page-footer">
+        <section class="page-footer__outer">
+                <h3 class="page-footer__title">Hells Bells Tattoo</h3>
+                <a href="tel:+00000000" class="page-footer__phone">+7(999)001-02-03</a>
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <a href="" class="social-links__link">vkontakte</a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="" class="social-links__link">facebook</a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="" class="social-links__link">instagram</a>
+                    </li>
+                </ul>   
+        </section>
+    </footer>
+</body>
+</html>
 
-@@include('./includes/footer.html')
-@@include('./includes/bottom.html')
+<!-- @@include('./includes/footer.html')
+@@include('./includes/bottom.html') -->
