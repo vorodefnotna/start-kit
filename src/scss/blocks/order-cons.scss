@@ -1,0 +1,18 @@
+.order-cons {
+  background: #2d2d2d;
+  border-radius: 90px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  position: fixed;
+  right: 0;
+  top: 50px;
+  width: 35px;
+  color: #ffffff;
+}
+
+.order-cons__text {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+}

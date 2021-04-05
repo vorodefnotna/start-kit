@@ -1,0 +1,44 @@
+.promo {
+}
+
+.promo__container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.promo__slide {
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(to right, #131313 50%, rgba(0, 0, 0, 0.12) 50% 100%);
+  background-repeat: no-repeat;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #131313 0%, rgba(0, 0, 0, 0.12) 100%);
+  }
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: -0.03em;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #747474 0%, #ffffff 100%);
+  padding: 10px;
+  position: absolute;
+  bottom: 25px;
+  width: 720px;
+}
